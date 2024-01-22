@@ -1,0 +1,192 @@
+*, .footer {
+    font-family: 'Concert One','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+::-webkit-scrollbar-track {
+    border-radius: 35px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 35px;
+    background-color: #A5C7A1;
+}
+
+
+.header {
+    background-color: #A5C7A1;
+    width: 100%;
+    height: 5rem;
+}
+
+.header_nav {
+    height: 100%;
+    margin: 0 3rem 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    height: 4.5rem;
+}
+
+.header_menu{
+    font-family: 'Concert One','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.header_menu_link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding: .5rem;
+}
+
+.header_menu_link:hover {
+    transition: 500ms;
+    background-color: #aaaaaa75;
+    color: #e2e2e2;
+    border-radius: 10px;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background-color: #DAE8D8;;
+    --size: 20px;
+    /*
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.678) 15%, transparent 15%, transparent 100%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.678) 15%, transparent 15%, transparent 100%);
+    */
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.678) 15%, transparent 15%, transparent 100%);
+    background-size: var(--size) var(--size);
+    background-position: 0 0, calc(var(--size)/2) calc(var(--size)/2);
+}
+
+.main_container {
+    height: 100%;
+}
+
+.main_titulo {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.main_content {
+    height: calc(100% - 12rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lista_cursos {
+    color: #FFFFFF;
+    background-color: #9FC8AA;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.lista_cursos_item {
+    font-size: 1.9rem;
+    padding: .25rem;
+}
+
+.main_imagem {
+    height: 100%;
+}
+
+.contato {
+    max-width: 100%;
+    margin: 2rem 0 2rem 0;
+    background-color: #FEFDFC;
+}
+
+.contato_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.endereco_paragrafo {
+    margin: .5rem;
+}
+
+.parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parceiro_lista {
+    border: 0 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.parceiro_imagem {
+    height: 4rem;
+    border: solid 2px #9FC8AA;
+    border-radius: 50%;
+}
+
+.paceiro_link:hover {
+    transition: 1s;
+    filter: blur(.8px);
+}
+
+.redes_sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.redes_sociais_lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.rede_link {
+    color: #000000;
+    font-size: 2.5rem;
+}
+
+.fa-facebook:hover {
+    transition: 1s;
+    color: rgb(60, 132, 240);
+}
+
+.fa-instagram:hover {
+    transition: 1s;
+    color: rgb(245, 20, 200);
+}
+
+.fa-whatsapp:hover {
+    transition: 1s;
+    color: rgb(70, 255, 0);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9FC8AA;
+    height: 5rem;
+    color: #FFFFFF;
+}
