@@ -30,8 +30,33 @@
     align-items: center;
 }
 
+.link_logo {
+    text-decoration: none;
+}
+
 .header_logo {
     height: 4.5rem;
+}
+
+.header_hamburger {
+    padding: 0;
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #FFFFFF;
+    cursor: pointer;
+}
+  
+.header_hamburger::after,
+.header_hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
 
 .header_menu{
@@ -110,11 +135,13 @@
     max-width: 100%;
     margin: 2rem 0 2rem 0;
     background-color: #FEFDFC;
+    font-size: 1.2rem;
 }
 
 .contato_container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -189,4 +216,83 @@
     background-color: #9FC8AA;
     height: 5rem;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 890px) {
+    .header_hamburger {
+        display: block;
+        z-index: 1;
+    }
+    .menu {
+        position: fixed;
+    }
+    .header_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #A5C7A1;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    .header_menu_link {
+        font-size: 1.7rem;
+        opacity: 0;
+    }
+
+    .header_menu li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }
+    .header_menu li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }
+    .header_menu li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }
+    .header_menu li:nth-child(4) a{
+        transition: 0.5s 0.8s;
+    }
+
+    .header_nav.active .header_menu {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .header_nav.active .header_menu_link {
+        opacity: 1;
+    }
+    .header_nav.active .header_hamburger {
+        position: fixed;
+        top: 33px;
+        right: 50px;
+        border-top-color: transparent;
+    }
+    .header_nav.active .header_hamburger::before {
+        transform: rotate(135deg);
+    }
+    .header_nav.active .header_hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .lista_cursos_item{
+        font-size: 1.5rem;
+    }
+    .main_imagem {
+        display: none;
+    }
+    .contato {
+        font-size: 1rem;
+    }
+
+    .endereco {
+        width: 100%;
+        text-align: center;
+    }
 }
