@@ -86,6 +86,7 @@
 .main {
     width: 100%;
     height: calc(100vh - 5rem);
+    min-height: calc(575px - 5rem);
     background-color: #DAE8D8;;
     --size: 20px;
     /*
@@ -281,18 +282,45 @@
         top: -7px;
     }
 
+    .main_titulo{
+        font-size: 1.5rem;
+    }
     .lista_cursos_item{
         font-size: 1.5rem;
     }
     .main_imagem {
         display: none;
     }
+
     .contato {
         font-size: 1rem;
     }
-
     .endereco {
         width: 100%;
+        padding: 0 2%;
         text-align: center;
+    }
+
+    .footer_paragrafo {
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .endereco {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .lista_cursos {
+        padding: .9rem;
+    }
+    .lista_cursos_item {
+        font-size: 1.3rem;
+    }
+    .footer_paragrafo {
+        font-size: .7rem;
     }
 }
