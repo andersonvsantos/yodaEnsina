@@ -304,6 +304,10 @@
     .footer_paragrafo {
         font-size: .85rem;
     }
+    
+    #contato_nav {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 425px) {
