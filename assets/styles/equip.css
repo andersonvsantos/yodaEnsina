@@ -1,0 +1,42 @@
+.main {
+    height: 110%;
+}
+
+.main_container{
+    padding: 1em 0;
+}
+
+.equipe_content {
+    width: 75%;
+    height: 42em;
+    margin: 0 auto;
+    background-color: #EAE0C7;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.nome {
+    font-size: 2em;
+}
+
+.foto_equipe {
+    width: 20%;
+    border-radius: 50%;
+    border: 10px solid#A5C7A1;
+}
+
+.cargo {
+    font-size: 1.8em;
+}
+
+.sobre_equipe {
+    width: 80%;
+    background-color: #F2F2F2;
+    padding: 1.5em;
+    border-radius: 15px;
+}
