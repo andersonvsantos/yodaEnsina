@@ -27,7 +27,7 @@
 
 @media screen and (min-width: 1200px){
     .main_container{
-        padding: 10em 0;
+        padding-top: 10em 0;
     }
 
     .sobre_text {
